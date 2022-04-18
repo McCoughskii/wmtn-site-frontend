@@ -1,0 +1,47 @@
+
+#WeatherCard {
+	margin: auto;
+	margin-top: 25px;
+	
+	width: fit-content;
+	max-width: 90vw;
+}
+
+.weather-card-text_location {
+	font-size: 30px;
+	font-weight: 400;
+
+	margin-bottom: 5px;
+}
+
+.weather-card-text_status {
+	font-size: 20px;
+	font-weight: 100;
+
+	margin-bottom: 5px;
+}
+
+.weather-card-now {
+	display: flex;
+	flex-direction: row;
+}
+
+#weather-card-temp {
+	font-size: 100px;
+	font-weight: 300;
+	
+	margin-bottom: 5px;
+}
+
+#weather-card-icon {
+	
+	margin: auto;
+	margin-bottom: 5px;
+
+	user-select: none;
+
+	span {
+		font-size: 120px;
+		color: rgb(184, 184, 184);
+	}
+}

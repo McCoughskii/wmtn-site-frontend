@@ -1,0 +1,93 @@
+@use "@material/shape";
+
+.Listen {
+	position: relative;
+
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	text-align: center;
+}
+
+#MediaControls {
+	position: relative;
+
+	width: 300px;
+	height: 75px;
+
+	// background: #cccccc;
+	border-radius: 8px;
+
+	padding-left: 15px;
+	padding-right: 15px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#VolumeIcon {
+	position: relative;
+
+	float: left;
+	align-content: center;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	max-width: fit-content;
+
+	input {
+		font-size: 30px;
+		user-select: none;
+
+		background: none;
+		border: none;
+
+		color: #000000;
+	}
+
+	input:hover {
+		color: var(--mdc-theme-primary);
+	}
+}
+
+#VolumeSlider {
+	position: relative;
+
+
+	float: right;
+
+	width: 200px;
+	margin-left: 0px;
+	margin-right: 25px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+#CurrentlyPlaying-title {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#CurrentlyPlaying-song {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#CurrentlyNext-title {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#CurrentlyNext-song {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}

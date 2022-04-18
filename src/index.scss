@@ -1,0 +1,83 @@
+@use "@material/theme" with (
+	$primary: #0068ad,
+	$secondary: #ffaa2a,
+	$on-primary: #ffffff,
+	$on-secondary: #000000
+);
+
+@use "material-components-web";
+
+html,
+body {
+	position: relative;
+
+	height: 100%;
+
+	margin: 0;
+	background: #ffffff;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+}
+
+#app-mount {
+	position: relative;
+
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.main-app {
+	position: relative;
+
+	flex: 1;
+}
+
+// Maybe change from flex to MDC grid
+.Cards {
+	position: relative;
+
+	margin: auto;
+	margin-bottom: 20px;
+
+	padding-left: 16px;
+	padding-right: 16px;
+
+	width: fit-content;
+
+	justify-content: center;
+
+	display: flex;
+	flex-flow: row wrap;
+
+	column-gap: 40px;
+	row-gap: 25px;
+
+}
+
+
+.Cards > * {
+	position: relative;
+
+	flex: 0 0;
+
+	min-width: 301px;
+	min-height: 232px;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: column;
+	align-self: right;
+}
+
+.mdc-card__content {
+	padding: 16px;
+}
+
+.card-title {
+	font-size: 30px;
+	font-weight: 400;
+
+	margin-bottom: 5px;
+}

@@ -1,0 +1,31 @@
+#Header {
+	position: relative;
+	padding: 20px;
+	background: #003e7d;
+
+	display: flex;
+
+}
+
+.brand {
+	align-items: center;
+
+	display: flex;
+	flex: 2;
+
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.brand__name {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+.brand__logo {
+	height: 50px;
+	margin-right: 15px;
+
+}
