@@ -7,10 +7,6 @@ import Events from "./components/cards/events";
 // import Schedule from "./components/cards/schedule";
 import Footer from "./components/footer";
 
-// TODO: Implement the following:
-//
-// - Add a "Schedule" card to the "Cards" section that pulls the schedule from the API.
-
 function App() {
 	return (
 		<>

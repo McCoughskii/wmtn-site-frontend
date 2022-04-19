@@ -62,30 +62,32 @@ function MediaControls() {
 				<input type="button" id="VolumeButton" className="material-icons" value="volume_off" />
 			</div>
 
-			<div id="VolumeSlider" className="mdc-slider mdc-slider--discrete">
-				<input
-					className="mdc-slider__input"
-					type="range"
-					min="0"
-					max="100"
-					value="0"
-					name="volume"
-					step="1"
-					onChange={() => {}}
-				/>
-				<div className="mdc-slider__track">
-					<div className="mdc-slider__track--inactive"></div>
-					<div className="mdc-slider__track--active">
-						<div className="mdc-slider__track--active_fill" />
-					</div>
-				</div>
-				<div className="mdc-slider__thumb">
-					<div className="mdc-slider__value-indicator-container" aria-hidden="true">
-						<div className="mdc-slider__value-indicator">
-							<span className="mdc-slider__value-indicator-text">0</span>
+			<div id="VolumeContainer">
+				<div id="VolumeSlider" className="mdc-slider mdc-slider--discrete">
+					<input
+						className="mdc-slider__input"
+						type="range"
+						min="0"
+						max="100"
+						value="0"
+						name="volume"
+						step="1"
+						onChange={() => {}}
+					/>
+					<div className="mdc-slider__track">
+						<div className="mdc-slider__track--inactive"></div>
+						<div className="mdc-slider__track--active">
+							<div className="mdc-slider__track--active_fill" />
 						</div>
 					</div>
-					<div className="mdc-slider__thumb-knob"></div>
+					<div className="mdc-slider__thumb">
+						<div className="mdc-slider__value-indicator-container" aria-hidden="true">
+							<div className="mdc-slider__value-indicator">
+								<span className="mdc-slider__value-indicator-text">0</span>
+							</div>
+						</div>
+						<div className="mdc-slider__thumb-knob"></div>
+					</div>
 				</div>
 			</div>
 		</div>
