@@ -32,17 +32,21 @@ function SongList() {
 			setSongs(listHTML);
 		});
 
-		setInterval(() => {
-			let listHTML = [];
+		const interval = setInterval(() => {
+			listHTML = [];
 
 			getPreviousSongs().then((songList) => {
 				songList.forEach((song, index) => {
 					listHTML.push(<li key={index}>{song}</li>);
 				});
 
-				// setSongs(listHTML);
+				setSongs(listHTML);
 			});
-		}, 10000);
+		}, 15000);
+
+		return () => {
+			clearInterval(interval);
+		};
 	}, []);
 
 	return <ul className="song-list">{songs}</ul>;

@@ -21,12 +21,16 @@ function CurrentlyPlaying() {
 			setNextSong(list.NextSong);
 		});
 
-		setInterval(() => {
+		const interval = setInterval(() => {
 			getSongList().then((list) => {
 				setCurrentSong(list.CurrentSong);
 				setNextSong(list.NextSong);
 			});
-		}, 10000);
+		}, 15000);
+
+		return () => {
+			clearInterval(interval);
+		};
 	}, []);
 
 	return (
