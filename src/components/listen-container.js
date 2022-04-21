@@ -27,7 +27,8 @@ export class AudioController extends EventEmitter {
 
 	play() {
 		if(!this.stream.getAttribute("src")) {
-			this.stream.setAttribute("src", "http://tux-support.com:9320/;");
+			// eslint-disable-next-line no-undef
+			this.stream.setAttribute("src", `${process.env.REACT_APP_STREAM_URL}`);
 		}
 
 		this.stream.play().catch(() => {});
@@ -89,7 +90,8 @@ export class AudioController extends EventEmitter {
 }
 
 export async function getSongList() {
-	const response = await fetch("https://api.serabusm.com/v1/songList").catch(() => {
+	// eslint-disable-next-line no-undef
+	const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/v1/songList`).catch(() => {
 		return undefined;
 	});
 

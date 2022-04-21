@@ -11,7 +11,8 @@ export function getTime() {
 }
 
 export async function getWeather() {
-	const response = await fetch("https://api.serabusm.com/v1/weather");
+	// eslint-disable-next-line no-undef
+	const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/v1/weather`);
 
 	const data = await response.json();
 

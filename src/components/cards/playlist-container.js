@@ -1,5 +1,6 @@
 export async function getPreviousSongs() {
-	const response = await fetch("https://api.serabusm.com/v1/songList").catch(() => {
+	// eslint-disable-next-line no-undef
+	const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/v1/songList`).catch(() => {
 		return undefined;
 	});
 
