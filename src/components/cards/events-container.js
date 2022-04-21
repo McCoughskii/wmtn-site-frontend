@@ -1,6 +1,7 @@
 
 export async function getEvents() {
-	const response = await fetch("https://api.serabusm.com/v1/events").catch(() => {
+	// eslint-disable-next-line no-undef
+	const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/v1/events`).catch(() => {
 		return undefined;
 	});
 
