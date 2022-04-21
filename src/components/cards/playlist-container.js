@@ -13,5 +13,6 @@ export async function getPreviousSongs() {
 		};
 	});
 
-	return data.PreviousSongs;
+	return data.PreviousSongs.map((song) => song.replace("&amp;", "&"));
 }
+	

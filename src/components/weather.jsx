@@ -28,11 +28,12 @@ function WeatherHeader() {
 		const curTime = getTime();
 		setTime(curTime);
 
-		setInterval(() => {
+		const interval = setInterval(() => {
 			const curTime = getTime();
 			setTime(curTime);
 		} , 1000);
 
+		return () => clearInterval(interval);
 	}, []);
 
 	return (
@@ -50,7 +51,7 @@ function WeatherHeader() {
 					<span className="weather-card_spacer">&deg;</span>
 				</div>
 				<div id="weather-card-icon">
-					<img src={icon} />
+					<img src={icon} alt="currentWeatherIcon"/>
 				</div>
 			</div>
 		</div>

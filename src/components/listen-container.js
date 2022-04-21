@@ -106,5 +106,8 @@ export async function getSongList() {
 		};
 	});
 
+	data.CurrentSong = data.CurrentSong.replace("&amp;", "&");
+	data.NextSong = data.NextSong.replace("&amp;", "&");
+
 	return data;
 }

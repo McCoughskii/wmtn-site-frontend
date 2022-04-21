@@ -44,9 +44,7 @@ function SongList() {
 			});
 		}, 15000);
 
-		return () => {
-			clearInterval(interval);
-		};
+		return () => clearInterval(interval);
 	}, []);
 
 	return <ul className="song-list">{songs}</ul>;
