@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# WMTN Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is a website made for St. Andrew's Sewanee School's radio station, WMTN.
+This website is not affiliated with the school. I am simply a student who is helping with the radio station.
 
 ## Available Scripts
 
