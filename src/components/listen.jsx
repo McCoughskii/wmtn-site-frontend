@@ -57,8 +57,6 @@ function MediaControls() {
 					className="mdc-elevation--z2"
 					preload="metadata"
 					controls
-					autoPlay
-					muted
 				>
 					<source src="http://tux-support.com:9320/;" />
 				</audio>
