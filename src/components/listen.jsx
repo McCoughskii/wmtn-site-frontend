@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import "./listen.scss";
 import { AudioController, getSongList } from "./listen-container.js";
@@ -58,7 +59,7 @@ function MediaControls() {
 					preload="metadata"
 					controls
 				>
-					<source src="http://tux-support.com:9320/;" />
+					<source src={process.env.REACT_APP_STREAM_URL} />
 				</audio>
 			</div>
 		);
