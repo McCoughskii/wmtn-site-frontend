@@ -51,15 +51,15 @@ function MediaControls() {
 	// this is because the volume slider does not work on mobile IOS
 
 	if (isMobile) {
+		const url = `${process.env.REACT_APP_API_BASE_URL}/v1/stream`;
 		return (
-			<div className="MediaPlayer__Mobile">
+			<div>
 				<audio
 					id="WMTNStream_Mobile"
-					className="mdc-elevation--z2"
 					preload="metadata"
 					controls
 				>
-					<source src={process.env.REACT_APP_STREAM_URL} />
+					<source src={url} />
 				</audio>
 			</div>
 		);

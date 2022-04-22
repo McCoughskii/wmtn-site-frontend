@@ -28,7 +28,7 @@ export class AudioController extends EventEmitter {
 	play() {
 		if(!this.stream.getAttribute("src")) {
 			// eslint-disable-next-line no-undef
-			this.stream.setAttribute("src", `${process.env.REACT_APP_STREAM_URL}`);
+			this.stream.setAttribute("src", `${process.env.REACT_APP_API_BASE_URL}`);
 		}
 
 		this.stream.play().catch(() => {});
