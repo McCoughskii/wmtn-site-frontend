@@ -51,7 +51,7 @@ function MediaControls() {
 	// this is because the volume slider does not work on mobile IOS
 
 	if (isMobile) {
-		const url = `${process.env.REACT_APP_API_BASE_URL}/v1/stream`;
+		const url = process.env.REACT_APP_STREAM_URL;
 		return (
 			<div>
 				<audio
